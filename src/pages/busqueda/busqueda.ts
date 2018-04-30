@@ -13,7 +13,7 @@ import {Pais} from '../../providers/pais/pais';
 })
 export class BusquedaPage {
   InicialesPais:string="";
-  Paises:Pais[];
+  Paises:Pais[]=[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public _servicio:ServicioPaisProvider) {
   }
@@ -31,6 +31,7 @@ export class BusquedaPage {
           });
         }
     else{
+      this.Paises = [];
       console.log("Iniciales Pais:"+this.InicialesPais);
     }
   }
