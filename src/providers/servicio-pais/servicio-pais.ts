@@ -15,10 +15,10 @@ import {Pais} from '../../providers/pais/pais'
 export class ServicioPaisProvider {
   Paises:any[] = []
 
-  urlService:string = "http://jacgandres1980-001-site1.dtempurl.com/api/paiswebapi?type=json";
-  urlServiceByName:string="http://jacgandres1980-001-site1.dtempurl.com/api/paiswebapi/GetPaisesPorNombre?type=json&nombre="
+  urlService:string = "http://jacgandres050780-001-site1.ctempurl.com/api/paiswebapi?type=json";
+  urlServiceByName:string="http://jacgandres050780-001-site1.ctempurl.com/api/paiswebapi/GetPaisesPorNombre?type=json&nombre="
 
-  constructor( private http: HttpClient ) { 
+  constructor( private http: HttpClient ) {
     console.log('Hello ServicioPaisProvider Provider');
   }
 
