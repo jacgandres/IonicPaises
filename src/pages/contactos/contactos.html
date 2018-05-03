@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Contactos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+  <ion-content>
+    <ion-list>
+      <span *ngFor="let contact of Contactos" >
+        <ion-item *ngIf="contact.displayName">
+            {{contact.displayName}} = {{contact.phoneNumbers[0].value}}
+        </ion-item>
+      </span>
+    </ion-list>
+ </ion-content>

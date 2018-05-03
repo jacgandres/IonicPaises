@@ -3,7 +3,7 @@
     <name>IonicPaises</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://192.168.1.102:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -81,5 +81,7 @@
     <plugin name="cordova-plugin-ionic-webview" spec="1.1.19" />
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-whitelist" spec="1.3.3" />
+    <allow-navigation href="http://192.168.1.102:8100" />
+    <plugin name="cordova-plugin-contacts" spec="^2.3.1" />
     <engine name="android" spec="~6.2.3" />
 </widget>
